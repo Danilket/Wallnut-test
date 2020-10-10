@@ -1,3 +1,7 @@
-# Webpack. Полный курс 2020
+Установка - npm i
 
-https://www.youtube.com/watch?v=eSaF8NXeNsA 
+Сборка в режиме разработки - npm run dev
+
+Сборка в режиме продакшена - npm run build
+
+Локальный сервер - npm start
