@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico" type="image/ico">
+  <title>Wallnut Team</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-top-container">
+      <div class="header-top">
+        <!-- Я не нашел в фаилах тестового задания изображения для ретины
+           экранов, но добавил закомментированный код,
+            как если бы я вставил нужную картинку -->
+        <picture>
+          <source srcset="./assets/images/header/mobile/01.png" media="(max-width: 500px)">
+          <source srcset="./assets/images/header/tablet/01.png" media="(max-width: 768px)">
+          <!-- <source srcset="./assets/images/header/tablet/01.png /assets/images/header/tablet/01_RETINA.png 2x"> -->
+          <img class="header-top__logo" src="./assets/images/header/01.png" alt="">
+        </picture>
+        <div class="header-top__water water">
+          <h1 class="water__title">кремниевая родниковая вода «SiEnergy»</h1>
+        </div>
+        <div class="header-top__contacts contacts">
+          <div class="contacts__top">
+            <div class="contacts__top-select">
+              <img src="./assets/icons/03.svg" alt="">
+              <select name="" id="" class="contacts__language">
+                <option value="">Русский (Россия)</option>
+              </select>
+            </div>
+            <a href="mailto:info@sienergy.water" class="contacts__mail"><span>info@sienergy.water</span></a>
+            <a href="tel:79848487454" class="contacts__tel"><span>+7 (984) 848-74-54</span></a>
+          </div>
+          <div class="contacts__bottom">
+            <p class="water__health">ПОМОГАЕМ БЫТЬ ЗДОРОВЫМИ!</p>
+            <div class="contacts__networks networks">
+              <span class="networks__text">мы в соцсетях</span>
+              <a href="https://vk.com/" class="networks__vk"><img src="./assets/icons/05.svg" alt=""></a>
+              <a href="https://www.facebook.com/" class="networks__facebook"><img src="./assets/icons/06.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="header-top__buttons">
+          <a data-fancybox data-src="#modal" href="javascript:;">
+            <button class="header-top__callback">Обратный звонок</button>
+          </a>
+          <div class="modal-window modal-window_thx" id="modal2">
+            <h2 class="modal-window__title">Спасибо за Заявку!</h2>
+            <p class="modal-window__text modal-window_thx__text">Специалист свяжется с вами в течение 15 минут и ответит на все интересующие вопросы</p>
+            <div>
+              <!-- <img class='modal-window__img-heart' src="./assets/images/header/03.png" alt=""> -->
+            </div>
+          </div>
+
+          <div class="modal-window" id="modal">
+            <h2 class="modal-window__title">Обратный звонок</h2>
+            <p class="modal-window__text">Оставьте заявку и мы свяжаемся с вами в течение 15 минут и ответим на все вопросы</p>
+            <div class="modal-window__forms forms">
+              <form class="forms__tel" action="">
+                <p class="forms__text text-tel"><span>Телефон*</span><input data-inputmask="'mask': '+7 (999) 999-99-99'" class="forms__number" type="tel" /></p>
+              </form>
+              <form class="forms__person" action="">
+                <p class="forms__text text-name"><span>Имя*</span><input class="forms__name" type="text" placeholder="Ваше имя"></p>
+              </form>
+            </div>
+            <p class="modal-window__confidential">Я соглашаюсь с поликой конфиденциальности данных и обработкой
+              персональных данных</p>
+            <button class="modal-window__call">Заказать звонок</button>
+          </div>
+          <div class="modal-window" id="modal-next"></div>
+          <div class="header-top__buttons-bottom">
+            <button class="header-top__enter"><img src="./assets/icons/07.svg" alt=""> <span>войти</span></button>
+            <button class="header-top__basket">
+              <div class="header-top__basket-counter">
+                <div><span>99</span></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="header-bottom__nav nav menu-header__menu">
+        <div class="menu-header__icon test close">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav__list menu-header__list">
+          <li class="nav__item"><a>история</a></li>
+          <li class="nav__item"><a>наша вода</a></li>
+          <li class="nav__item"><a>акции</a></li>
+          <li class="nav__item"><a>образ жизни</a></li>
+          <li class="nav__item"><a>хочу воду</a></li>
+          <li class="nav__item"><a>FAQ</a></li>
+          <li class="nav__item"><a>Блог</a></li>
+          <li class="nav__item"><a>Оптовым клиентам</a></li>
+          <li class="nav__item"><a>Контакты</a></li>
+        </ul>
+        <a data-fancybox data-src="#modal" href="javascript:;">
+          <button class="header-top__callback active">Обратный звонок</button>
+        </a>
+        <div class="contacts__top-select active">
+          <p class="contacts__choice">Выбор языка</p>
+          <div>
+            <img src="./assets/icons/03.svg" alt="">
+            <select name="" id="" class="contacts__language">
+              <option value="">Русский (Россия)</option>
+            </select>
+          </div>
+          <a href="mailto:info@sienergy.water" class="contacts__mail"><span class="active">info@sienergy.water</span></a>
+          <a href="tel:79848487454" class="contacts__tel"><span class="active">+7 (984) 848-74-54</span></a>
+          <div class="contacts__networks networks">
+            <span class="networks__text active">мы в соцсетях</span>
+            <a href="https://vk.com/" class="networks__vk">
+              <img src="./assets/icons/05.svg" alt="">
+            </a>
+            <a href="https://vk.com/" class="networks__facebook"><img src="./assets/icons/06.svg" alt=""></a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-bottom__menu menu">
+        <div class="menu-header__icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="menu__title">МЕНЮ</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <img class="main__img-left" src="./assets/images/main/01.png" alt="">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="main__info info">
+          <div class="info__container">
+            <h1 class="info__title">
+              Энергия природы
+            </h1>
+            <p class="info__text">Хорошая вода улучшает вкус пищи и вина. Идеально сбалансированный минеральный состав воды SiENERGY подчеркивает и усиливает изысканный вкус блюд, позволяя насладиться каждым кусочком. Подается в красивых стеклянных бутылках, созданных для лучших ресторанов. Вода SiENERGY является членом Общества Fine Water Society.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="main__info info">
+          <div class="info__container">
+            <h1 class="info__title">
+              Энергия природы 2
+            </h1>
+            <p class="info__text">Хорошая вода улучшает вкус пищи и вина. Идеально сбалансированный минеральный состав воды SiENERGY подчеркивает и усиливает изысканный вкус блюд, позволяя насладиться каждым кусочком. Подается в красивых стеклянных бутылках, созданных для лучших ресторанов. Вода SiENERGY является членом Общества Fine Water Society.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="main__info info">
+          <div class="info__container">
+            <h1 class="info__title">
+              Энергия природы 3
+            </h1>
+            <p class="info__text">Хорошая вода улучшает вкус пищи и вина. Идеально сбалансированный минеральный состав воды SiENERGY подчеркивает и усиливает изысканный вкус блюд, позволяя насладиться каждым кусочком. Подается в красивых стеклянных бутылках, созданных для лучших ресторанов. Вода SiENERGY является членом Общества Fine Water Society.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/images/main/02.png" alt="" class="main__img-right">
+  </main>
+</body>
+
+</html>
