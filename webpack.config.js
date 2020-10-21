@@ -158,10 +158,6 @@ module.exports = {
   plugins: plugins(),
   module: {
     rules: [
-      // {
-      //   test: /\.svg$/,
-      //   loader: 'svg-sprite-loader'
-      // },
       {
         test: /\.html$/i,
         loader: 'html-loader',
@@ -193,7 +189,11 @@ module.exports = {
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,
-        use: ['file-loader']
+        use: [
+          {
+            loader: 'file-loader?name=[name].[ext]'
+          }
+        ]
       },
       {
         test: /\.js$/,

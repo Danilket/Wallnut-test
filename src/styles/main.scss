@@ -1,0 +1,74 @@
+// <MAIN>
+
+.main {
+	height: 520px;
+	background: url(../assets/images/main/03.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	position: relative;
+
+	&__img-left {
+		position: absolute;
+		z-index: 0;
+		@media (max-width: $md3+px) {
+			display: none;
+		}
+	}
+	&__img-right {
+		position: absolute;
+		right: 91px;
+		z-index: 1;
+		@media (max-width: 1280px) {
+			display: none;
+		}
+	}
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 710px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 6px 0;
+	height: 520px;
+	max-height: 100%;
+	@media (max-width: $md3+px) {
+		height: 466px;
+	}
+	&__container {
+		max-width: 710px;
+		width: 100%;
+		margin: 0 auto;
+		z-index: 5;
+	}
+	&__title {
+		color: #019ec4;
+		font-family: "Century Gothic";
+		font-size: 56px;
+		text-transform: uppercase;
+		margin: 0 0 45px 0;
+		text-align: center;
+		letter-spacing: 5.6px;
+		@media (max-width: $md3+px) {
+			font-size: 48px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 36px;
+		}
+	}
+	&__text {
+		font-size: 18px;
+
+		text-align: center;
+		line-height: 30px;
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+		}
+	}
+}
+
+// <//MAIN>

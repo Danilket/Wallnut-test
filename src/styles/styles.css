@@ -1,9 +1,5 @@
 @import "~normalize.css";
-@import "jquery.fancybox.min.css";
-@import "styles.css";
+@import "fonts.scss";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
-
-/* .header-top div:nth-child(2) {
-	margin: 10px 0 0 0;
-} */
